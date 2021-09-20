@@ -68,9 +68,7 @@ const links = document.querySelectorAll(".menu__link"); // selecting all anchor 
 links.forEach((item) => {
   item.addEventListener("click", () => { // adding event listener for each anchor on click
     let el = document.getElementById(item.getAttribute("data-nav")); // getting the section with the same value of anchor
-    el.scrollIntoView({
-      behavior: "smooth"
-    }); // adding event listener for each one with behavior smooth while scrolling
+    el.scrollIntoView(); // adding event listener for each one to scroll
   })
 });
 
